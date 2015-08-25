@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugins>
+  <Name>系统配置</Name>
+  <Version>1.0.0.0</Version>
+  <PluginItems>
+    <Key>Channel</Key>
+    <Name>网站栏目</Name>
+    <ManagePath>~/DesktopModule/CommonModule/ChannelManage.ascx</ManagePath>
+  </PluginItems>
+  <PluginItems>
+    <Key>Site</Key>
+    <Name>站点管理</Name>
+    <ManagePath>~/DesktopModule/CommonModule/SiteManage.ascx</ManagePath>
+  </PluginItems>
+  <PluginItems>
+    <Key>ContentItem</Key>
+    <Name>内容管理</Name>
+    <ManagePath>~/DesktopModule/CommonModule/ContentItemManage.ascx</ManagePath>
+  </PluginItems>
+  <PluginItems>
+    <Key>Skin</Key>
+    <Name>皮肤管理</Name>
+    <ManagePath>~/DesktopModule/CommonModule/SkinManage.ascx</ManagePath>
+  </PluginItems>
+  <PluginItems>
+    <Key>Plugin</Key>
+    <Name>插件管理</Name>
+    <ManagePath>~/DesktopModule/CommonModule/PluginManage.ascx</ManagePath>
+  </PluginItems>
+</Plugins>

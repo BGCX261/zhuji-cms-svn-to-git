@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.VoteModule.Domain.VoteSubjectIp, ZhuJi.Modules" table="VoteSubjectIp">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+		<many-to-one name="VoteSubjectInfo" column="SubjectId" update="false" insert="false" lazy="false"/>
+    <property name="Ip" type="String"/>
+    <property name="AddTime" type="DateTime"/>
+    <property name="SubjectId" type="Int32"/>
+  </class>
+</hibernate-mapping>
+

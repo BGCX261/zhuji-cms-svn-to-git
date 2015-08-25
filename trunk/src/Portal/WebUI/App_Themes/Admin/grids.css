@@ -1,0 +1,30 @@
+.nfgrid
+{
+	cursor:default;
+}
+.nfgridheader
+{
+	font-weight: bold;
+}
+.nfgriditem
+{
+	height: 20px;
+	line-height: 120%;
+	nfover: expression(onmouseover=function(){NiceGrid_MouseOver(this)},onmouseout=function(){NiceGrid_MouseOut(this)});
+}
+.nfgriditemover
+{
+	background-color: #f5f8ff;
+}
+.nfgriditemdown
+{
+	background-color: #f5f8f7;
+}
+.nfgridfooter
+{
+
+}
+.nfgridpager
+{
+	cursor:default;
+}

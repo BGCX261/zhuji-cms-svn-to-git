@@ -1,0 +1,122 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30120728-1471-4403-92BD-09FF100B2AD7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.Log.WebUI</RootNamespace>
+    <AssemblyName>ZhuJi.Log.WebUI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ZhuJi.Log.WebUI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoggingList.ascx.cs">
+      <DependentUpon>LoggingList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggingList.ascx.designer.cs">
+      <DependentUpon>LoggingList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggingManage.ascx.cs">
+      <DependentUpon>LoggingManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggingManage.ascx.designer.cs">
+      <DependentUpon>LoggingManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoggingList.ascx" />
+    <Content Include="LoggingManage.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Component\ZhuJi.Component.csproj">
+      <Project>{79DC848C-9777-4348-805E-109A876D1ED3}</Project>
+      <Name>ZhuJi.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\ZhuJi.AOP\ZhuJi.AOP.csproj">
+      <Project>{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}</Project>
+      <Name>ZhuJi.AOP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj">
+      <Project>{E86ECE69-56C4-4C27-AC61-692C146EF173}</Project>
+      <Name>ZhuJi.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Library\ZhuJi.Library.csproj">
+      <Project>{3FA115EF-7EB7-4D08-A351-F745719AB2D5}</Project>
+      <Name>ZhuJi.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Portal\WebUI\ZhuJi.Portal.WebUI.csproj">
+      <Project>{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}</Project>
+      <Name>ZhuJi.Portal.WebUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\ZhuJi.Log.Domain.csproj">
+      <Project>{49622943-2D39-4CA0-A7D4-D595B2A8D334}</Project>
+      <Name>ZhuJi.Log.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\ZhuJi.Log.IDAL.csproj">
+      <Project>{42DE3205-F2EE-4C71-B686-2446EA25F405}</Project>
+      <Name>ZhuJi.Log.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDAL\ZhuJi.Log.NHibernateDAL.csproj">
+      <Project>{CAAEBE22-1C20-4437-967C-F076DE985375}</Project>
+      <Name>ZhuJi.Log.NHibernateDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1949</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

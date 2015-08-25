@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Portal.Domain.Plugin, ZhuJi.Portal.Domain" table="Plugin">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="Keyword" type="String"/>
+    <property name="Configure" type="String"/>
+    <property name="IsSystem" type="Boolean"/>
+    <property name="Title" type="String"/>
+    <property name="Url" type="String"/>
+    <property name="Parent" type="Int32"/>
+    <property name="Depth" type="Int32"/>
+    <property name="Path" type="String"/>
+    <property name="Child" type="Int32"/>
+    <property name="Target" type="String"/>
+    <property name="Remarks" type="String"/>
+    <property name="OrderBy" type="Int32"/>
+  </class>
+</hibernate-mapping>
+

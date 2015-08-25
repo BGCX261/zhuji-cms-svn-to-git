@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.AdsModule.Domain.AdsInfor, ZhuJi.Modules" table="AdsInfor">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+		<many-to-one name="AdsLocationInfo" column="Location" update="false" insert="false" lazy="false"/>
+    <property name="Location" type="Int32"/>
+    <property name="Name" type="String"/>
+    <property name="Content" type="String"/>
+    <property name="Hots" type="Int32"/>
+    <property name="RegisterTime" type="DateTime"/>
+    <property name="BeginTime" type="DateTime"/>
+    <property name="EndTime" type="DateTime"/>
+    <property name="CustomerUnits" type="String"/>
+    <property name="CustomerPerson" type="String"/>
+    <property name="CustomerContact" type="String"/>
+  </class>
+</hibernate-mapping>
+

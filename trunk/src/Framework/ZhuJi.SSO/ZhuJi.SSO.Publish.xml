@@ -1,0 +1,35 @@
+<publishData>
+  <publishTarget publishUrl="F:\zj\project\cms\src\Portal\WebUI\SSO\">
+    <file relUrl="bin/ZhuJi.SSO.pdb" publishTime="2008-1-30 20:55:26" />
+    <file relUrl="bin/ZhuJi.SSO.XML" publishTime="2008-1-30 20:55:26" />
+    <file relUrl="bin/ZhuJi.SSO.Core.xml" publishTime="2008-1-22 22:53:21" />
+    <file relUrl="bin/Castle.DynamicProxy.dll" publishTime="2007-2-6 14:12:20" />
+    <file relUrl="ValidateCode.aspx" publishTime="2008-1-6 19:56:17" />
+    <file relUrl="bin/ZhuJi.Library.xml" publishTime="2008-1-27 23:49:21" />
+    <file relUrl="bin/ZhuJi.UUMS.IDAL.dll" publishTime="2008-1-27 23:49:25" />
+    <file relUrl="Web.config" publishTime="2008-1-19 19:54:12" />
+    <file relUrl="bin/SgmlReaderDll.dll" publishTime="2004-3-24 22:35:26" />
+    <file relUrl="bin/ZhuJi.UUMS.Domain.pdb" publishTime="2008-1-27 23:49:21" />
+    <file relUrl="bin/ZhuJi.UUMS.IDAL.xml" publishTime="2008-1-27 23:49:25" />
+    <file relUrl="bin/ZhuJi.UUMS.NHibernateDAL.dll" publishTime="2008-1-27 23:49:26" />
+    <file relUrl="bin/ZhuJi.Library.pdb" publishTime="2008-1-27 23:49:21" />
+    <file relUrl="bin/ZhuJi.UUMS.NHibernateDAL.XML" publishTime="2008-1-27 23:49:26" />
+    <file relUrl="bin/ZhuJi.UUMS.NHibernateDAL.pdb" publishTime="2008-1-27 23:49:26" />
+    <file relUrl="bin/ZhuJi.SSO.dll" publishTime="2008-1-30 20:55:26" />
+    <file relUrl="bin/log4net.dll" publishTime="2006-10-30 8:47:04" />
+    <file relUrl="bin/ZhuJi.SSO.Core.dll" publishTime="2008-1-22 22:53:21" />
+    <file relUrl="bin/ZhuJi.NH.dll" publishTime="2008-1-27 23:49:22" />
+    <file relUrl="bin/ZhuJi.UUMS.IDAL.pdb" publishTime="2008-1-27 23:49:25" />
+    <file relUrl="bin/ZhuJi.UUMS.Domain.xml" publishTime="2008-1-27 23:49:21" />
+    <file relUrl="Images/login.png" publishTime="2007-12-31 16:56:03" />
+    <file relUrl="bin/ZhuJi.UUMS.Domain.dll" publishTime="2008-1-27 23:49:22" />
+    <file relUrl="bin/ZhuJi.Library.dll" publishTime="2008-1-27 23:49:21" />
+    <file relUrl="bin/NHibernate.dll" publishTime="2007-12-27 22:47:15" />
+    <file relUrl="bin/ZhuJi.SSO.Core.pdb" publishTime="2008-1-22 22:53:21" />
+    <file relUrl="Default.aspx" publishTime="2008-1-30 20:55:10" />
+    <file relUrl="Images/main_bg.gif" publishTime="2007-7-3 10:00:07" />
+    <file relUrl="bin/ZhuJi.NH.pdb" publishTime="2008-1-27 23:49:22" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="2007-5-3 10:42:36" />
+    <file relUrl="Images/Button_Login.jpg" publishTime="2007-12-31 15:18:44" />
+  </publishTarget>
+</publishData>

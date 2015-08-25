@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.RssModule.Domain.RssChannel, ZhuJi.Modules" table="V_RssChannel">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="Title" type="String"/>
+		<property name="Image" type="String"/>
+		<property name="Description" type="String"/>
+		<property name="Link" type="String"/>
+		<property name="Language" type="String"/>
+		<property name="Docs" type="String"/>
+		<property name="Generator" type="String"/>
+		<property name="Ttl" type="String"/>
+
+		<bag name="RssItems" cascade="all-delete-orphan" lazy="false" order-by="Id" inverse="true">
+			<key column="ChannelId" />
+			<one-to-many class="ZhuJi.Modules.RssModule.Domain.RssItem, ZhuJi.Modules" />
+		</bag>
+  </class>
+</hibernate-mapping>
+

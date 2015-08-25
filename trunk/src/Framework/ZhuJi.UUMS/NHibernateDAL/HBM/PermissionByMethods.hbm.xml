@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.UUMS.Domain.PermissionByMethods, ZhuJi.UUMS.Domain" table="PermissionByMethods">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="RolesInfo" column="RolesId" update="false" insert="false" lazy="false"/>
+    <many-to-one name="ExplainInfo" column="ExplainId" update="false" insert="false" lazy="false"/>
+    <property name="RolesId" type="Int32"/>
+    <property name="ExplainId" type="Int32"/>
+    <property name="Allowed" type="Boolean"/>
+  </class>
+</hibernate-mapping>
+

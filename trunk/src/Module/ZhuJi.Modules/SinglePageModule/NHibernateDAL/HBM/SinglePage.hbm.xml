@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.SinglePageModule.Domain.SinglePage, ZhuJi.Modules" table="SinglePage">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <many-to-one name="ContentBaseInfo" class="ZhuJi.Modules.Core.Domain.ContentBase, ZhuJi.Modules" column="ContentBaseId" cascade="all" unique="true"/>
+    <property name="Summary" type="String"/>
+    <property name="Content" type="String"/>
+  </class>
+</hibernate-mapping>

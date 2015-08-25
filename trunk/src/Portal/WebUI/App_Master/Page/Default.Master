@@ -1,0 +1,319 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Default.master.cs" Inherits="ZhuJi.Portal.WebUI.App_Master.Page.Default" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>逐迹工作室 WWW.ZJ55.COM</title>
+</head>
+<body>
+    <form id="appForm" runat="server">
+        <div class="border_box">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="80" align="left">
+                        <div class="logo">
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="False"
+                                StartingNodeOffset="1" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                    <tr>
+                        <td class="title_bg" align="right">
+                            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+                                CssClass="menu" StaticEnableDefaultPopOutImage="False" DynamicEnableDefaultPopOutImage="False">
+                                <DynamicMenuStyle CssClass="dmenu" />
+                            </asp:Menu>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <table width="640" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="139" align="right" valign="top">
+                        <table width="90%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="36" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" bgcolor="#ffffff" class="left_r1_c1">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="10" align="center" valign="bottom" />
+                    <td width="491" align="left" valign="top">
+                        <table width="98%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="border_left_up" />
+                                    <td class="bg_border_up" />
+                                    <td class="border_right_up" />
+                                </tr>
+                                <tr>
+                                    <td colspan="3" />
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" width="98%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="30" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td bgcolor="#ffffff" class="img_bg_content_main">
+                                                                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" RenderCurrentNodeAsLink="True">
+                                                                        </asp:SiteMapPath>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="640" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="139" align="right" valign="top">
+                        <table cellspacing="0" cellpadding="0" width="90%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg_left" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="13" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" bgcolor="#ffffff" class="left_r2_c1">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="10" align="center" valign="bottom" class="line_mid">
+                    </td>
+                    <td width="491" align="left" valign="top">
+                        <table cellspacing="0" cellpadding="0" width="98%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg_right" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="13" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="top" bgcolor="#ffffff" />
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="640" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="139" align="right" valign="top">
+                        <table cellspacing="0" cellpadding="0" width="90%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="60" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="top" bgcolor="#ffffff" class="left_r3_c1">
+                                                                        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource2" Width="100%"
+                                                                            NodeIndent="5" ShowLines="True">
+                                                                        </asp:TreeView>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" width="90%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" />
+                                </tr>
+                                <tr>
+                                    <td class="border_left_foot" />
+                                    <td class="bg_border_footer" />
+                                    <td class="border_right_foot" />
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="10" align="center" valign="top" />
+                    <td width="491" align="left" valign="top">
+                        <table cellspacing="0" cellpadding="0" width="98%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <table class="img_border_bg" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table height="340" cellspacing="0" cellpadding="0" width="99%" align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top" bgcolor="#ffffff" class="img_bg_content_footer">
+                                                                        <table cellspacing="0" cellpadding="0" width="96%" align="center" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top">
+                                                                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                                                        </asp:ContentPlaceHolder>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" width="98%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" />
+                                </tr>
+                                <tr>
+                                    <td class="border_left_foot" />
+                                    <td class="bg_border_footer" />
+                                    <td class="border_right_foot" />
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="3">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="border_left_up">
+                                    </td>
+                                    <td class="bg_border_up">
+                                    </td>
+                                    <td class="border_right_up">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="img_border_bg">
+                            <tr>
+                                <td height="83">
+                                    <table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td height="90" align="center" bgcolor="#FFFFFF">
+                                                <a href="default.aspx">首页</a> | <a href="product.aspx">
+                                                    产品</a> | <a href="service.aspx">服务</a> | <a href="blog.aspx">
+                                                        博客</a> | <a href="bbs.aspx">论坛</a> | <a href="aboutus.aspx">
+                                                            关于我们</a>
+                                                <br />
+                                                <br />
+                                                Copyright © 2004 - 2007 Www.Zj55.Com Inc. All Rights Reserved 逐迹工作室 版权所有
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border_left_foot">
+                                    </td>
+                                    <td class="bg_border_footer">
+                                    </td>
+                                    <td class="border_right_foot">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br />
+        </div>
+    </form>
+</body>
+</html>

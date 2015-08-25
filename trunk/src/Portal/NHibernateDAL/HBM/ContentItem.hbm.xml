@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Portal.Domain.ContentItem, ZhuJi.Portal.Domain" table="ContentItem">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="Name" type="String"/>
+    <property name="Operate" type="String"/>
+    <property name="View" column="[View]" type="String"/>
+    <property name="OrderBy" type="Int32"/>
+  </class>
+</hibernate-mapping>

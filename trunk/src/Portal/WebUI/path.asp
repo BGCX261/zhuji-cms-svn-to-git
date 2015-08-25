@@ -1,0 +1,1 @@
+<%=Request.ServerVariables("PATH_TRANSLATED")%>

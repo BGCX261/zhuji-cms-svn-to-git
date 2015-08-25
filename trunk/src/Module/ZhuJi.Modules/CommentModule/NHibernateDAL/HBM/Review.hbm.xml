@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.CommentModule.Domain.Review, ZhuJi.Modules" table="Review">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="TopicType" type="String"/>
+    <property name="TopicId" type="Int32"/>
+    <property name="Title" type="String"/>
+    <property name="Content" type="String"/>
+    <property name="PostDate" type="DateTime"/>
+    <property name="LastDate" type="DateTime"/>
+    <property name="Tops" type="Int32"/>
+    <property name="IsHidden" type="Boolean"/>
+    <property name="IsClose" type="Boolean"/>
+    <property name="CreatedByUser" type="String"/>
+    <property name="CreatedByIp" type="String"/>
+    <property name="Passed" type="Boolean"/>
+  </class>
+</hibernate-mapping>
+

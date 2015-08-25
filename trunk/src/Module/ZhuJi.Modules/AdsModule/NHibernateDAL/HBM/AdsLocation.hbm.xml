@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.Modules.AdsModule.Domain.AdsLocation, ZhuJi.Modules" table="AdsLocation">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+		<many-to-one name="AdsLocationTypeInfo" column="Type" update="false" insert="false" lazy="false"/>
+    <property name="Name" type="String"/>
+    <property name="Type" type="Int32"/>
+    <property name="Width" type="Int32"/>
+    <property name="Height" type="Int32"/>
+    <property name="Ispass" type="Boolean"/>
+  </class>
+</hibernate-mapping>
+

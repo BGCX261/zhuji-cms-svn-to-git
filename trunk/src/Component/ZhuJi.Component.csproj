@@ -1,0 +1,88 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79DC848C-9777-4348-805E-109A876D1ED3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.Component</RootNamespace>
+    <AssemblyName>ZhuJi.Component</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ZhuJi.Component.XML</DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="DateTimeControl.cs" />
+    <Compile Include="NumericControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimplePager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\calendar.js" />
+    <Content Include="js\config.js" />
+    <Content Include="js\lang\en.js" />
+    <Content Include="js\lang\zh-cn.js" />
+    <Content Include="js\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker.htm" />
+    <EmbeddedResource Include="js\numeric.js" />
+    <Content Include="js\skin\datePicker.gif" />
+    <Content Include="js\skin\default\datepicker.css" />
+    <Content Include="js\skin\default\down.jpg" />
+    <Content Include="js\skin\default\left.gif" />
+    <Content Include="js\skin\default\navLeft.gif" />
+    <Content Include="js\skin\default\navRight.gif" />
+    <Content Include="js\skin\default\right.gif" />
+    <Content Include="js\skin\default\up.jpg" />
+    <Content Include="js\skin\WdatePicker.css" />
+    <Content Include="js\skin\whyGreen\bg.jpg" />
+    <Content Include="js\skin\whyGreen\datepicker.css" />
+    <Content Include="js\skin\whyGreen\down.jpg" />
+    <Content Include="js\skin\whyGreen\left.gif" />
+    <Content Include="js\skin\whyGreen\navLeft.gif" />
+    <Content Include="js\skin\whyGreen\navRight.gif" />
+    <Content Include="js\skin\whyGreen\other\bg2.jpg" />
+    <Content Include="js\skin\whyGreen\other\interface.jpg" />
+    <Content Include="js\skin\whyGreen\right.gif" />
+    <Content Include="js\skin\whyGreen\up.jpg" />
+    <Content Include="js\skin\whyGreen\ymbg.jpg" />
+    <Content Include="js\validator.js" />
+    <Content Include="js\WdatePicker.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,93 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F965E9C-4ED7-496A-813A-C0F606001F53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.UUMS.NHibernateDAL</RootNamespace>
+    <AssemblyName>ZhuJi.UUMS.NHibernateDAL</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ZhuJi.UUMS.NHibernateDAL.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls.cs" />
+    <Compile Include="ControlsAttribute.cs" />
+    <Compile Include="ControlsType.cs" />
+    <Compile Include="MethodExplain.cs" />
+    <Compile Include="Methods.cs" />
+    <Compile Include="PermissionByCommon.cs" />
+    <Compile Include="PermissionByMethods.cs" />
+    <Compile Include="PermissionByResource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HBM\Controls.hbm.xml" />
+    <EmbeddedResource Include="HBM\ControlsAttribute.hbm.xml" />
+    <EmbeddedResource Include="HBM\ControlsType.hbm.xml" />
+    <EmbeddedResource Include="HBM\MethodExplain.hbm.xml" />
+    <EmbeddedResource Include="HBM\Methods.hbm.xml" />
+    <EmbeddedResource Include="HBM\PermissionByCommon.hbm.xml" />
+    <EmbeddedResource Include="HBM\PermissionByMethods.hbm.xml" />
+    <EmbeddedResource Include="HBM\PermissionByResource.hbm.xml" />
+    <EmbeddedResource Include="HBM\Resources.hbm.xml" />
+    <EmbeddedResource Include="HBM\Roles.hbm.xml" />
+    <EmbeddedResource Include="HBM\Users.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj">
+      <Project>{E86ECE69-56C4-4C27-AC61-692C146EF173}</Project>
+      <Name>ZhuJi.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Library\ZhuJi.Library.csproj">
+      <Project>{3FA115EF-7EB7-4D08-A351-F745719AB2D5}</Project>
+      <Name>ZhuJi.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\ZhuJi.UUMS.Domain.csproj">
+      <Project>{006E32CC-4F89-44A2-9A05-9BAB258C07A3}</Project>
+      <Name>ZhuJi.UUMS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\ZhuJi.UUMS.IDAL.csproj">
+      <Project>{36413D5F-0979-419D-8848-0262816DECC8}</Project>
+      <Name>ZhuJi.UUMS.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

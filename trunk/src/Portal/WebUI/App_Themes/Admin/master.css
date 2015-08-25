@@ -1,0 +1,42 @@
+/***********************************************/
+/* 基本样式                                    */
+/***********************************************/
+body
+{
+	font-family: 宋体, Arial;
+	color: #000000;
+	font-size: 12px;
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+	height: 100%;
+}
+fieldset
+{
+	padding: 0 10px 5px 10px;
+}
+legend
+{
+	padding: 2px;
+}
+td
+{
+	line-height: 180%;
+	border-bottom: 1px solid #cccccc;
+}
+a
+{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #428EFF;
+	text-decoration: underline;
+}
+/******************** ext ***********************/
+.nav
+{
+	background-image: url(../../images/icons/plugin.gif);
+}

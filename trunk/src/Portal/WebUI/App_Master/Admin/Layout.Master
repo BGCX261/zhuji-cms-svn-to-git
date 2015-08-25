@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="Layout.master.cs" Inherits="ZhuJi.Portal.WebUI.App_Master.Admin.Layout" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>逐迹内容管理系统</title>
+    <link rel="stylesheet" type="text/css" href="/portal/ext/resources/css/ext-all.css" />
+    <script type="text/javascript" src="/portal/ext/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="/portal/ext/ext-all.js"></script>
+    <script type="text/javascript">
+    
+    Ext.BLANK_IMAGE_URL = '/portal/ext/resources/images/default/s.gif';
+    
+    Ext.onReady(function(){
+            
+        Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+        
+        var menu = new Ext.menu.Menu({
+            id: 'mainMenu',
+            items: [{
+                text: 'I like Ext',
+                checked: true,
+                checkHandler: onItemCheck
+                }]
+        });
+//        
+//        var tb = new Ext.Toolbar();
+//        tb.render('toolbar');
+//        tb.add({
+//                text:'文章管理',
+//                menu: menu
+//            });
+//        
+        var viewport = new Ext.Viewport({
+            layout:'border',
+            items:[{
+                    region:'west',
+                    id:'west-panel',
+                    title:'管理菜单',
+                    split:true,
+                    width: 200,
+                    minSize: 175,
+                    maxSize: 400,
+                    collapsible: true,
+                    margins:'0 0 0 5',
+                    layout:'accordion',
+                    layoutConfig:{
+                        animate:true
+                    },
+                    items: [{
+                        contentEl: 'contentMenu',
+                        title:'内容管理',
+                        border:false,
+                        iconCls:'nav',
+                        autoScroll:true
+                    },{
+                        contentEl: 'pluginMenu',
+                        title:'插件管理',
+                        border:false,
+                        iconCls:'nav',
+                        autoScroll:true
+                    }]
+                },
+                new Ext.TabPanel({
+                    region:'center',
+                    deferredRender:false,
+                    activeTab:0,
+                    items:[{
+                        contentEl:'main',
+                        title: '内容面板',
+                        autoScroll:true
+                    }]
+                })
+             ]
+        });
+        
+        function onItemCheck(item){
+        }
+    });
+    </script>
+
+</head>
+<body>
+    <form id="appForm" runat="server">
+        
+        <div id="contentMenu">
+            <asp:ContentPlaceHolder ID="cphContentMenu" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="pluginMenu">
+            <asp:ContentPlaceHolder ID="cphPluginMenu" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="main">
+            <div id="toolbar"></div>
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

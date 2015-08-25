@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.UUMS.Domain.Methods, ZhuJi.UUMS.Domain" table="Methods">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="ExplainInfo" column="ExplainId" update="false" insert="false" lazy="false"/>
+    <property name="MethodName" type="String"/>
+    <property name="ClassName" type="String"/>
+    <property name="ExplainId" type="int"/>
+  </class>
+</hibernate-mapping>
+

@@ -1,0 +1,330 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.UUMS.WebUI</RootNamespace>
+    <AssemblyName>ZhuJi.UUMS.WebUI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ZhuJi.UUMS.WebUI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlsAttributeList.ascx.cs">
+      <DependentUpon>ControlsAttributeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsAttributeList.ascx.designer.cs">
+      <DependentUpon>ControlsAttributeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsAttributeManage.ascx.cs">
+      <DependentUpon>ControlsAttributeManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsAttributeManage.ascx.designer.cs">
+      <DependentUpon>ControlsAttributeManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsEdit.ascx.cs">
+      <DependentUpon>ControlsEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsEdit.ascx.designer.cs">
+      <DependentUpon>ControlsEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsList.ascx.cs">
+      <DependentUpon>ControlsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsList.ascx.designer.cs">
+      <DependentUpon>ControlsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsManage.ascx.cs">
+      <DependentUpon>ControlsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsManage.ascx.designer.cs">
+      <DependentUpon>ControlsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsTypeList.ascx.cs">
+      <DependentUpon>ControlsTypeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsTypeList.ascx.designer.cs">
+      <DependentUpon>ControlsTypeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsTypeManage.ascx.cs">
+      <DependentUpon>ControlsTypeManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsTypeManage.ascx.designer.cs">
+      <DependentUpon>ControlsTypeManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodExplainList.ascx.cs">
+      <DependentUpon>MethodExplainList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodExplainList.ascx.designer.cs">
+      <DependentUpon>MethodExplainList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodExplainManage.ascx.cs">
+      <DependentUpon>MethodExplainManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodExplainManage.ascx.designer.cs">
+      <DependentUpon>MethodExplainManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodsEdit.ascx.cs">
+      <DependentUpon>MethodsEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodsEdit.ascx.designer.cs">
+      <DependentUpon>MethodsEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodsList.ascx.cs">
+      <DependentUpon>MethodsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodsList.ascx.designer.cs">
+      <DependentUpon>MethodsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodsManage.ascx.cs">
+      <DependentUpon>MethodsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodsManage.ascx.designer.cs">
+      <DependentUpon>MethodsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByCommonEdit.ascx.cs">
+      <DependentUpon>PermissionByCommonEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByCommonEdit.ascx.designer.cs">
+      <DependentUpon>PermissionByCommonEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByCommonList.ascx.cs">
+      <DependentUpon>PermissionByCommonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByCommonList.ascx.designer.cs">
+      <DependentUpon>PermissionByCommonList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByCommonManage.ascx.cs">
+      <DependentUpon>PermissionByCommonManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByCommonManage.ascx.designer.cs">
+      <DependentUpon>PermissionByCommonManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByMethodsEdit.ascx.cs">
+      <DependentUpon>PermissionByMethodsEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByMethodsEdit.ascx.designer.cs">
+      <DependentUpon>PermissionByMethodsEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByMethodsList.ascx.cs">
+      <DependentUpon>PermissionByMethodsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByMethodsList.ascx.designer.cs">
+      <DependentUpon>PermissionByMethodsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByMethodsManage.ascx.cs">
+      <DependentUpon>PermissionByMethodsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByMethodsManage.ascx.designer.cs">
+      <DependentUpon>PermissionByMethodsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByResourceEdit.ascx.cs">
+      <DependentUpon>PermissionByResourceEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByResourceEdit.ascx.designer.cs">
+      <DependentUpon>PermissionByResourceEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByResourceList.ascx.cs">
+      <DependentUpon>PermissionByResourceList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByResourceList.ascx.designer.cs">
+      <DependentUpon>PermissionByResourceList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionByResourceManage.ascx.cs">
+      <DependentUpon>PermissionByResourceManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissionByResourceManage.ascx.designer.cs">
+      <DependentUpon>PermissionByResourceManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourcesList.ascx.cs">
+      <DependentUpon>ResourcesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourcesList.ascx.designer.cs">
+      <DependentUpon>ResourcesList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourcesManage.ascx.cs">
+      <DependentUpon>ResourcesManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourcesManage.ascx.designer.cs">
+      <DependentUpon>ResourcesManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RolesList.ascx.cs">
+      <DependentUpon>RolesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesList.ascx.designer.cs">
+      <DependentUpon>RolesList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RolesManage.ascx.cs">
+      <DependentUpon>RolesManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesManage.ascx.designer.cs">
+      <DependentUpon>RolesManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersEdit.ascx.cs">
+      <DependentUpon>UsersEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersEdit.ascx.designer.cs">
+      <DependentUpon>UsersEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersList.ascx.cs">
+      <DependentUpon>UsersList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersList.ascx.designer.cs">
+      <DependentUpon>UsersList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersManage.ascx.cs">
+      <DependentUpon>UsersManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersManage.ascx.designer.cs">
+      <DependentUpon>UsersManage.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlsAttributeList.ascx" />
+    <Content Include="ControlsAttributeManage.ascx" />
+    <Content Include="ControlsEdit.ascx" />
+    <Content Include="ControlsList.ascx" />
+    <Content Include="ControlsManage.ascx" />
+    <Content Include="ControlsTypeList.ascx" />
+    <Content Include="ControlsTypeManage.ascx" />
+    <Content Include="MethodExplainList.ascx" />
+    <Content Include="MethodExplainManage.ascx" />
+    <Content Include="MethodsEdit.ascx" />
+    <Content Include="MethodsList.ascx" />
+    <Content Include="MethodsManage.ascx" />
+    <Content Include="PermissionByCommonEdit.ascx" />
+    <Content Include="PermissionByCommonList.ascx" />
+    <Content Include="PermissionByCommonManage.ascx" />
+    <Content Include="PermissionByMethodsEdit.ascx" />
+    <Content Include="PermissionByMethodsList.ascx" />
+    <Content Include="PermissionByMethodsManage.ascx" />
+    <Content Include="PermissionByResourceEdit.ascx" />
+    <Content Include="PermissionByResourceList.ascx" />
+    <Content Include="PermissionByResourceManage.ascx" />
+    <Content Include="ResourcesList.ascx" />
+    <Content Include="ResourcesManage.ascx" />
+    <Content Include="RolesList.ascx" />
+    <Content Include="RolesManage.ascx" />
+    <Content Include="UsersEdit.ascx" />
+    <Content Include="UsersList.ascx" />
+    <Content Include="UsersManage.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Component\ZhuJi.Component.csproj">
+      <Project>{79DC848C-9777-4348-805E-109A876D1ED3}</Project>
+      <Name>ZhuJi.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\ZhuJi.AOP\ZhuJi.AOP.csproj">
+      <Project>{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}</Project>
+      <Name>ZhuJi.AOP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj">
+      <Project>{E86ECE69-56C4-4C27-AC61-692C146EF173}</Project>
+      <Name>ZhuJi.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Library\ZhuJi.Library.csproj">
+      <Project>{3FA115EF-7EB7-4D08-A351-F745719AB2D5}</Project>
+      <Name>ZhuJi.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Portal\WebUI\ZhuJi.Portal.WebUI.csproj">
+      <Project>{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}</Project>
+      <Name>ZhuJi.Portal.WebUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\ZhuJi.UUMS.Domain.csproj">
+      <Project>{006E32CC-4F89-44A2-9A05-9BAB258C07A3}</Project>
+      <Name>ZhuJi.UUMS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\ZhuJi.UUMS.IDAL.csproj">
+      <Project>{36413D5F-0979-419D-8848-0262816DECC8}</Project>
+      <Name>ZhuJi.UUMS.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDAL\ZhuJi.UUMS.NHibernateDAL.csproj">
+      <Project>{1F965E9C-4ED7-496A-813A-C0F606001F53}</Project>
+      <Name>ZhuJi.UUMS.NHibernateDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2830</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

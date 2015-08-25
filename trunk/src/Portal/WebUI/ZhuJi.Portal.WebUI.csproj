@@ -1,0 +1,335 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.Portal.WebUI</RootNamespace>
+    <AssemblyName>ZhuJi.Portal.WebUI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ZhuJi.Portal.WebUI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.2.2106.29420, Culture=neutral, PublicKeyToken=4f86767c9b519a06">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Foreign dlls\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Page\Default.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddIn.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddIn.aspx.designer.cs">
+      <DependentUpon>AddIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContentItem.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ContentItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContentItem.aspx.designer.cs">
+      <DependentUpon>ContentItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Master\Admin\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Master\Admin\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Master\Admin\Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Master\Admin\Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Master\Page\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Master\Page\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseWebControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\NHSiteMapProvider.cs" />
+    <Compile Include="DesktopModule\CommonModule\ChannelEdit.ascx.cs">
+      <DependentUpon>ChannelEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ChannelEdit.ascx.designer.cs">
+      <DependentUpon>ChannelEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ChannelList.ascx.cs">
+      <DependentUpon>ChannelList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ChannelList.ascx.designer.cs">
+      <DependentUpon>ChannelList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ChannelManage.ascx.cs">
+      <DependentUpon>ChannelManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ChannelManage.ascx.designer.cs">
+      <DependentUpon>ChannelManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemEdit.ascx.cs">
+      <DependentUpon>ContentItemEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemEdit.ascx.designer.cs">
+      <DependentUpon>ContentItemEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemList.ascx.cs">
+      <DependentUpon>ContentItemList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemList.ascx.designer.cs">
+      <DependentUpon>ContentItemList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemManage.ascx.cs">
+      <DependentUpon>ContentItemManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\ContentItemManage.ascx.designer.cs">
+      <DependentUpon>ContentItemManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginEdit.ascx.cs">
+      <DependentUpon>PluginEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginEdit.ascx.designer.cs">
+      <DependentUpon>PluginEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginList.ascx.cs">
+      <DependentUpon>PluginList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginList.ascx.designer.cs">
+      <DependentUpon>PluginList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginManage.ascx.cs">
+      <DependentUpon>PluginManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\PluginManage.ascx.designer.cs">
+      <DependentUpon>PluginManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteEdit.ascx.cs">
+      <DependentUpon>SiteEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteEdit.ascx.designer.cs">
+      <DependentUpon>SiteEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteList.ascx.cs">
+      <DependentUpon>SiteList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteList.ascx.designer.cs">
+      <DependentUpon>SiteList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteManage.ascx.cs">
+      <DependentUpon>SiteManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SiteManage.ascx.designer.cs">
+      <DependentUpon>SiteManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinEdit.ascx.cs">
+      <DependentUpon>SkinEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinEdit.ascx.designer.cs">
+      <DependentUpon>SkinEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinList.ascx.cs">
+      <DependentUpon>SkinList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinList.ascx.designer.cs">
+      <DependentUpon>SkinList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinManage.ascx.cs">
+      <DependentUpon>SkinManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModule\CommonModule\SkinManage.ascx.designer.cs">
+      <DependentUpon>SkinManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAuth.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WebAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAuth.aspx.designer.cs">
+      <DependentUpon>WebAuth.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Component\ZhuJi.Component.csproj">
+      <Project>{79DC848C-9777-4348-805E-109A876D1ED3}</Project>
+      <Name>ZhuJi.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.AOP\ZhuJi.AOP.csproj">
+      <Project>{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}</Project>
+      <Name>ZhuJi.AOP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.Log\IDAL\ZhuJi.Log.IDAL.csproj">
+      <Project>{42DE3205-F2EE-4C71-B686-2446EA25F405}</Project>
+      <Name>ZhuJi.Log.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.Log\NHibernateDAL\ZhuJi.Log.NHibernateDAL.csproj">
+      <Project>{CAAEBE22-1C20-4437-967C-F076DE985375}</Project>
+      <Name>ZhuJi.Log.NHibernateDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj">
+      <Project>{E86ECE69-56C4-4C27-AC61-692C146EF173}</Project>
+      <Name>ZhuJi.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.Plugins\ZhuJi.Plugins.csproj">
+      <Project>{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}</Project>
+      <Name>ZhuJi.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.UUMS\IDAL\ZhuJi.UUMS.IDAL.csproj">
+      <Project>{36413D5F-0979-419D-8848-0262816DECC8}</Project>
+      <Name>ZhuJi.UUMS.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.UUMS\NHibernateDAL\ZhuJi.UUMS.NHibernateDAL.csproj">
+      <Project>{1F965E9C-4ED7-496A-813A-C0F606001F53}</Project>
+      <Name>ZhuJi.UUMS.NHibernateDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\ZhuJi.Library.csproj">
+      <Project>{3FA115EF-7EB7-4D08-A351-F745719AB2D5}</Project>
+      <Name>ZhuJi.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\ZhuJi.Portal.Domain.csproj">
+      <Project>{A24679B9-81F5-4D4E-888E-8FC21E2606C1}</Project>
+      <Name>ZhuJi.Portal.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\ZhuJi.Portal.IDAL.csproj">
+      <Project>{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}</Project>
+      <Name>ZhuJi.Portal.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDAL\ZhuJi.Portal.NHibernateDAL.csproj">
+      <Project>{69B70128-59B6-4D3E-97D2-D46BB4362469}</Project>
+      <Name>ZhuJi.Portal.NHibernateDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Master\Admin\Layout.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ContentItem.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddIn.aspx" />
+    <Content Include="App_Master\Admin\Default.Master" />
+    <Content Include="Images\icons\plugin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Master\Page\Default.Master" />
+    <Content Include="App_Script\styles.js" />
+    <Content Include="App_Themes\Admin\forms.css" />
+    <Content Include="App_Themes\Admin\grids.css" />
+    <Content Include="App_Themes\Admin\master.css" />
+    <Content Include="DesktopModule\CommonModule\ChannelEdit.ascx" />
+    <Content Include="DesktopModule\CommonModule\ChannelList.ascx" />
+    <Content Include="DesktopModule\CommonModule\ChannelManage.ascx" />
+    <Content Include="DesktopModule\CommonModule\Configure.cfg.xml" />
+    <Content Include="DesktopModule\CommonModule\ContentItemEdit.ascx" />
+    <Content Include="DesktopModule\CommonModule\ContentItemList.ascx" />
+    <Content Include="DesktopModule\CommonModule\ContentItemManage.ascx" />
+    <Content Include="DesktopModule\CommonModule\PluginEdit.ascx" />
+    <Content Include="DesktopModule\CommonModule\PluginList.ascx" />
+    <Content Include="DesktopModule\CommonModule\PluginManage.ascx" />
+    <Content Include="DesktopModule\CommonModule\SiteEdit.ascx" />
+    <Content Include="DesktopModule\CommonModule\SiteList.ascx" />
+    <Content Include="DesktopModule\CommonModule\SiteManage.ascx" />
+    <Content Include="DesktopModule\CommonModule\SkinEdit.ascx" />
+    <Content Include="DesktopModule\CommonModule\SkinList.ascx" />
+    <Content Include="DesktopModule\CommonModule\SkinManage.ascx" />
+    <Content Include="index.html" />
+    <Content Include="Page\Default.aspx" />
+    <Content Include="WebAuth.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SkinModule\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1647</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Portal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

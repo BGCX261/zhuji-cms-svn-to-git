@@ -1,0 +1,609 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZhuJi.Modules</RootNamespace>
+    <AssemblyName>ZhuJi.Modules</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ZhuJi.Modules.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.2.2106.29420, Culture=neutral, PublicKeyToken=4f86767c9b519a06">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Foreign dlls\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Foreign dlls\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Foreign dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Foreign dlls\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdsModule\Domain\AdsInfor.cs" />
+    <Compile Include="AdsModule\Domain\AdsLocation.cs" />
+    <Compile Include="AdsModule\Domain\AdsLocationType.cs" />
+    <Compile Include="AdsModule\IDAL\IAdsInfor.cs" />
+    <Compile Include="AdsModule\IDAL\IAdsLocation.cs" />
+    <Compile Include="AdsModule\IDAL\IAdsLocationType.cs" />
+    <Compile Include="AdsModule\NHibernateDAL\AdsInfor.cs" />
+    <Compile Include="AdsModule\NHibernateDAL\AdsLocation.cs" />
+    <Compile Include="AdsModule\NHibernateDAL\AdsLocationType.cs" />
+    <Compile Include="AdsModule\AdsInforEdit.ascx.cs">
+      <DependentUpon>AdsInforEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsInforEdit.ascx.designer.cs">
+      <DependentUpon>AdsInforEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsInforList.ascx.cs">
+      <DependentUpon>AdsInforList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsInforList.ascx.designer.cs">
+      <DependentUpon>AdsInforList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsInforManage.ascx.cs">
+      <DependentUpon>AdsInforManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsInforManage.ascx.designer.cs">
+      <DependentUpon>AdsInforManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationEdit.ascx.cs">
+      <DependentUpon>AdsLocationEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationEdit.ascx.designer.cs">
+      <DependentUpon>AdsLocationEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationList.ascx.cs">
+      <DependentUpon>AdsLocationList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationList.ascx.designer.cs">
+      <DependentUpon>AdsLocationList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationManage.ascx.cs">
+      <DependentUpon>AdsLocationManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationManage.ascx.designer.cs">
+      <DependentUpon>AdsLocationManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationTypeList.ascx.cs">
+      <DependentUpon>AdsLocationTypeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationTypeList.ascx.designer.cs">
+      <DependentUpon>AdsLocationTypeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationTypeManage.ascx.cs">
+      <DependentUpon>AdsLocationTypeManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsModule\AdsLocationTypeManage.ascx.designer.cs">
+      <DependentUpon>AdsLocationTypeManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleModule\Domain\Article.cs" />
+    <Compile Include="ArticleModule\IDAL\IArticle.cs" />
+    <Compile Include="ArticleModule\NHibernateDAL\Article.cs" />
+    <Compile Include="ArticleModule\ArticleEdit.ascx.cs">
+      <DependentUpon>ArticleEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleEdit.ascx.designer.cs">
+      <DependentUpon>ArticleEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleList.ascx.cs">
+      <DependentUpon>ArticleList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleList.ascx.designer.cs">
+      <DependentUpon>ArticleList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleManage.ascx.cs">
+      <DependentUpon>ArticleManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleManage.ascx.designer.cs">
+      <DependentUpon>ArticleManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleShow.ascx.cs">
+      <DependentUpon>ArticleShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleModule\ArticleShow.ascx.designer.cs">
+      <DependentUpon>ArticleShow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommentModule\Domain\Review.cs" />
+    <Compile Include="CommentModule\IDAL\IReview.cs" />
+    <Compile Include="CommentModule\NHibernateDAL\Review.cs" />
+    <Compile Include="CommentModule\ReviewList.ascx.cs">
+      <DependentUpon>ReviewList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommentModule\ReviewList.ascx.designer.cs">
+      <DependentUpon>ReviewList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommentModule\ReviewManage.ascx.cs">
+      <DependentUpon>ReviewManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommentModule\ReviewManage.ascx.designer.cs">
+      <DependentUpon>ReviewManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Domain\ContentBase.cs" />
+    <Compile Include="CountModule\CountProfilesEdit.ascx.cs">
+      <DependentUpon>CountProfilesEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountProfilesEdit.ascx.designer.cs">
+      <DependentUpon>CountProfilesEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\Domain\CountArea.cs" />
+    <Compile Include="CountModule\Domain\CountBack.cs" />
+    <Compile Include="CountModule\Domain\CountBrowser.cs" />
+    <Compile Include="CountModule\Domain\CountHour.cs" />
+    <Compile Include="CountModule\Domain\CountOnline.cs" />
+    <Compile Include="CountModule\Domain\CountOs.cs" />
+    <Compile Include="CountModule\Domain\CountProfiles.cs" />
+    <Compile Include="CountModule\Domain\CountReferSite.cs" />
+    <Compile Include="CountModule\Domain\CountReferUrl.cs" />
+    <Compile Include="CountModule\Domain\CountResolution.cs" />
+    <Compile Include="CountModule\Domain\CountRespondents.cs" />
+    <Compile Include="CountModule\IDAL\ICountArea.cs" />
+    <Compile Include="CountModule\IDAL\ICountBack.cs" />
+    <Compile Include="CountModule\IDAL\ICountBrowser.cs" />
+    <Compile Include="CountModule\IDAL\ICountHour.cs" />
+    <Compile Include="CountModule\IDAL\ICountOnline.cs" />
+    <Compile Include="CountModule\IDAL\ICountOs.cs" />
+    <Compile Include="CountModule\IDAL\ICountProfiles.cs" />
+    <Compile Include="CountModule\IDAL\ICountReferSite.cs" />
+    <Compile Include="CountModule\IDAL\ICountReferUrl.cs" />
+    <Compile Include="CountModule\IDAL\ICountResolution.cs" />
+    <Compile Include="CountModule\IDAL\ICountRespondents.cs" />
+    <Compile Include="CountModule\IDAL\ICountStat.cs" />
+    <Compile Include="CountModule\CountAreaList.ascx.cs">
+      <DependentUpon>CountAreaList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountAreaList.ascx.designer.cs">
+      <DependentUpon>CountAreaList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountAreaManage.ascx.cs">
+      <DependentUpon>CountAreaManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountAreaManage.ascx.designer.cs">
+      <DependentUpon>CountAreaManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountBackList.ascx.cs">
+      <DependentUpon>CountBackList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountBackList.ascx.designer.cs">
+      <DependentUpon>CountBackList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountBackManage.ascx.cs">
+      <DependentUpon>CountBackManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountBackManage.ascx.designer.cs">
+      <DependentUpon>CountBackManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountBrowserList.ascx.cs">
+      <DependentUpon>CountBrowserList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountBrowserList.ascx.designer.cs">
+      <DependentUpon>CountBrowserList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountBrowserManage.ascx.cs">
+      <DependentUpon>CountBrowserManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountBrowserManage.ascx.designer.cs">
+      <DependentUpon>CountBrowserManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountHourList.ascx.cs">
+      <DependentUpon>CountHourList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountHourList.ascx.designer.cs">
+      <DependentUpon>CountHourList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountHourManage.ascx.cs">
+      <DependentUpon>CountHourManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountHourManage.ascx.designer.cs">
+      <DependentUpon>CountHourManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountOnlineList.ascx.cs">
+      <DependentUpon>CountOnlineList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountOnlineList.ascx.designer.cs">
+      <DependentUpon>CountOnlineList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountOnlineManage.ascx.cs">
+      <DependentUpon>CountOnlineManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountOnlineManage.ascx.designer.cs">
+      <DependentUpon>CountOnlineManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountOsList.ascx.cs">
+      <DependentUpon>CountOsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountOsList.ascx.designer.cs">
+      <DependentUpon>CountOsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountOsManage.ascx.cs">
+      <DependentUpon>CountOsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountOsManage.ascx.designer.cs">
+      <DependentUpon>CountOsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountProfilesManage.ascx.cs">
+      <DependentUpon>CountProfilesManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountProfilesManage.ascx.designer.cs">
+      <DependentUpon>CountProfilesManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountReferSiteList.ascx.cs">
+      <DependentUpon>CountReferSiteList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountReferSiteList.ascx.designer.cs">
+      <DependentUpon>CountReferSiteList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountReferSiteManage.ascx.cs">
+      <DependentUpon>CountReferSiteManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountReferSiteManage.ascx.designer.cs">
+      <DependentUpon>CountReferSiteManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountReferUrlList.ascx.cs">
+      <DependentUpon>CountReferUrlList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountReferUrlList.ascx.designer.cs">
+      <DependentUpon>CountReferUrlList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountReferUrlManage.ascx.cs">
+      <DependentUpon>CountReferUrlManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountReferUrlManage.ascx.designer.cs">
+      <DependentUpon>CountReferUrlManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountResolutionList.ascx.cs">
+      <DependentUpon>CountResolutionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountResolutionList.ascx.designer.cs">
+      <DependentUpon>CountResolutionList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountResolutionManage.ascx.cs">
+      <DependentUpon>CountResolutionManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountResolutionManage.ascx.designer.cs">
+      <DependentUpon>CountResolutionManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountRespondentsList.ascx.cs">
+      <DependentUpon>CountRespondentsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountRespondentsList.ascx.designer.cs">
+      <DependentUpon>CountRespondentsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountRespondentsManage.ascx.cs">
+      <DependentUpon>CountRespondentsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountRespondentsManage.ascx.designer.cs">
+      <DependentUpon>CountRespondentsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\CountStat.ascx.cs">
+      <DependentUpon>CountStat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountModule\CountStat.ascx.designer.cs">
+      <DependentUpon>CountStat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CountModule\SQLServerDAL\CountArea.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountBack.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountBrowser.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountHour.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountOnline.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountOs.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountProfiles.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountReferSite.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountReferUrl.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountResolution.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountRespondents.cs" />
+    <Compile Include="CountModule\SQLServerDAL\CountStat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="RssModule\Install\聚合内容RSS.sql" />
+    <Compile Include="RssModule\RssManage.ascx.cs">
+      <DependentUpon>RssManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RssModule\RssManage.ascx.designer.cs">
+      <DependentUpon>RssManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RssModule\Domain\RssChannel.cs" />
+    <Compile Include="RssModule\Domain\RssItem.cs" />
+    <Compile Include="RssModule\IDAL\IRssChannel.cs" />
+    <Compile Include="RssModule\RssList.ascx.cs">
+      <DependentUpon>RssList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RssModule\RssList.ascx.designer.cs">
+      <DependentUpon>RssList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RssModule\SQLServerDAL\RssChannel.cs" />
+    <Compile Include="SinglePageModule\Domain\SinglePage.cs" />
+    <Compile Include="SinglePageModule\IDAL\ISinglePage.cs" />
+    <Compile Include="SinglePageModule\NHibernateDAL\SinglePage.cs" />
+    <Compile Include="SinglePageModule\SinglePageEdit.ascx.cs">
+      <DependentUpon>SinglePageEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinglePageModule\SinglePageEdit.ascx.designer.cs">
+      <DependentUpon>SinglePageEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SinglePageModule\SinglePageManage.ascx.cs">
+      <DependentUpon>SinglePageManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinglePageModule\SinglePageManage.ascx.designer.cs">
+      <DependentUpon>SinglePageManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SinglePageModule\SinglePageShow.ascx.cs">
+      <DependentUpon>SinglePageShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinglePageModule\SinglePageShow.ascx.designer.cs">
+      <DependentUpon>SinglePageShow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\Domain\VoteItem.cs" />
+    <Compile Include="VoteModule\Domain\VoteSubject.cs" />
+    <Compile Include="VoteModule\Domain\VoteSubjectIp.cs" />
+    <Compile Include="VoteModule\Domain\VoteSubjectType.cs" />
+    <Compile Include="VoteModule\IDAL\IVoteItem.cs" />
+    <Compile Include="VoteModule\IDAL\IVoteSubject.cs" />
+    <Compile Include="VoteModule\IDAL\IVoteSubjectIp.cs" />
+    <Compile Include="VoteModule\IDAL\IVoteSubjectType.cs" />
+    <Compile Include="VoteModule\NHibernateDAL\VoteItem.cs" />
+    <Compile Include="VoteModule\NHibernateDAL\VoteSubject.cs" />
+    <Compile Include="VoteModule\NHibernateDAL\VoteSubjectIp.cs" />
+    <Compile Include="VoteModule\NHibernateDAL\VoteSubjectType.cs" />
+    <Compile Include="VoteModule\VoteItemEdit.ascx.cs">
+      <DependentUpon>VoteItemEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteItemEdit.ascx.designer.cs">
+      <DependentUpon>VoteItemEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteItemList.ascx.cs">
+      <DependentUpon>VoteItemList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteItemList.ascx.designer.cs">
+      <DependentUpon>VoteItemList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteItemManage.ascx.cs">
+      <DependentUpon>VoteItemManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteItemManage.ascx.designer.cs">
+      <DependentUpon>VoteItemManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectEdit.ascx.cs">
+      <DependentUpon>VoteSubjectEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectEdit.ascx.designer.cs">
+      <DependentUpon>VoteSubjectEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectIpList.ascx.cs">
+      <DependentUpon>VoteSubjectIpList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectIpList.ascx.designer.cs">
+      <DependentUpon>VoteSubjectIpList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectIpManage.ascx.cs">
+      <DependentUpon>VoteSubjectIpManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectIpManage.ascx.designer.cs">
+      <DependentUpon>VoteSubjectIpManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectList.ascx.cs">
+      <DependentUpon>VoteSubjectList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectList.ascx.designer.cs">
+      <DependentUpon>VoteSubjectList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectManage.ascx.cs">
+      <DependentUpon>VoteSubjectManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectManage.ascx.designer.cs">
+      <DependentUpon>VoteSubjectManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectTypeList.ascx.cs">
+      <DependentUpon>VoteSubjectTypeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectTypeList.ascx.designer.cs">
+      <DependentUpon>VoteSubjectTypeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectTypeManage.ascx.cs">
+      <DependentUpon>VoteSubjectTypeManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteModule\VoteSubjectTypeManage.ascx.designer.cs">
+      <DependentUpon>VoteSubjectTypeManage.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdsModule\NHibernateDAL\HBM\AdsInfor.hbm.xml" />
+    <EmbeddedResource Include="AdsModule\NHibernateDAL\HBM\AdsLocation.hbm.xml" />
+    <EmbeddedResource Include="AdsModule\NHibernateDAL\HBM\AdsLocationType.hbm.xml" />
+    <Content Include="AdsModule\AdsInforEdit.ascx" />
+    <Content Include="AdsModule\AdsInforList.ascx" />
+    <Content Include="AdsModule\AdsInforManage.ascx" />
+    <Content Include="AdsModule\AdsLocationEdit.ascx" />
+    <Content Include="AdsModule\AdsLocationList.ascx" />
+    <Content Include="AdsModule\AdsLocationManage.ascx" />
+    <Content Include="AdsModule\AdsLocationTypeList.ascx" />
+    <Content Include="AdsModule\AdsLocationTypeManage.ascx" />
+    <EmbeddedResource Include="ArticleModule\NHibernateDAL\HBM\Article.hbm.xml" />
+    <Content Include="ArticleModule\ArticleEdit.ascx" />
+    <Content Include="ArticleModule\ArticleList.ascx" />
+    <Content Include="ArticleModule\ArticleManage.ascx" />
+    <Content Include="ArticleModule\ArticleShow.ascx" />
+    <Content Include="CommentModule\ReviewList.ascx" />
+    <Content Include="CommentModule\ReviewManage.ascx" />
+    <EmbeddedResource Include="SinglePageModule\NHibernateDAL\HBM\SinglePage.hbm.xml" />
+    <EmbeddedResource Include="Core\NHibernateDAL\HBM\ContentBase.hbm.xml" />
+    <Content Include="CountModule\CountAreaList.ascx" />
+    <Content Include="CountModule\CountAreaManage.ascx" />
+    <Content Include="CountModule\CountBackList.ascx" />
+    <Content Include="CountModule\CountBackManage.ascx" />
+    <Content Include="CountModule\CountBrowserList.ascx" />
+    <Content Include="CountModule\CountBrowserManage.ascx" />
+    <Content Include="CountModule\CountHourList.ascx" />
+    <Content Include="CountModule\CountHourManage.ascx" />
+    <Content Include="CountModule\CountOnlineList.ascx" />
+    <Content Include="CountModule\CountOnlineManage.ascx" />
+    <Content Include="CountModule\CountOsList.ascx" />
+    <Content Include="CountModule\CountOsManage.ascx" />
+    <Content Include="CountModule\CountProfilesEdit.ascx" />
+    <Content Include="CountModule\CountProfilesManage.ascx" />
+    <Content Include="CountModule\CountReferSiteList.ascx" />
+    <Content Include="CountModule\CountReferSiteManage.ascx" />
+    <Content Include="CountModule\CountReferUrlList.ascx" />
+    <Content Include="CountModule\CountReferUrlManage.ascx" />
+    <Content Include="CountModule\CountResolutionList.ascx" />
+    <Content Include="CountModule\CountResolutionManage.ascx" />
+    <Content Include="CountModule\CountRespondentsList.ascx" />
+    <Content Include="CountModule\CountRespondentsManage.ascx" />
+    <Content Include="CountModule\CountStat.ascx" />
+    <Content Include="CountModule\Install\站点统计.sql" />
+    <Content Include="RssModule\RssManage.ascx" />
+    <Content Include="RssModule\RssList.ascx" />
+    <Content Include="SinglePageModule\SinglePageEdit.ascx" />
+    <Content Include="SinglePageModule\SinglePageManage.ascx" />
+    <Content Include="SinglePageModule\SinglePageShow.ascx" />
+    <Content Include="VoteModule\VoteItemEdit.ascx" />
+    <Content Include="VoteModule\VoteItemList.ascx" />
+    <Content Include="VoteModule\VoteItemManage.ascx" />
+    <Content Include="VoteModule\VoteSubjectEdit.ascx" />
+    <Content Include="VoteModule\VoteSubjectIpList.ascx" />
+    <Content Include="VoteModule\VoteSubjectIpManage.ascx" />
+    <Content Include="VoteModule\VoteSubjectList.ascx" />
+    <Content Include="VoteModule\VoteSubjectManage.ascx" />
+    <Content Include="VoteModule\VoteSubjectTypeList.ascx" />
+    <Content Include="VoteModule\VoteSubjectTypeManage.ascx" />
+    <EmbeddedResource Include="VoteModule\NHibernateDAL\HBM\VoteItem.hbm.xml" />
+    <EmbeddedResource Include="VoteModule\NHibernateDAL\HBM\VoteSubject.hbm.xml" />
+    <EmbeddedResource Include="VoteModule\NHibernateDAL\HBM\VoteSubjectIp.hbm.xml" />
+    <EmbeddedResource Include="VoteModule\NHibernateDAL\HBM\VoteSubjectType.hbm.xml" />
+    <EmbeddedResource Include="CommentModule\NHibernateDAL\HBM\Review.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Component\ZhuJi.Component.csproj">
+      <Project>{79DC848C-9777-4348-805E-109A876D1ED3}</Project>
+      <Name>ZhuJi.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.AOP\ZhuJi.AOP.csproj">
+      <Project>{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}</Project>
+      <Name>ZhuJi.AOP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj">
+      <Project>{E86ECE69-56C4-4C27-AC61-692C146EF173}</Project>
+      <Name>ZhuJi.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\ZhuJi.Library.csproj">
+      <Project>{3FA115EF-7EB7-4D08-A351-F745719AB2D5}</Project>
+      <Name>ZhuJi.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Portal\WebUI\ZhuJi.Portal.WebUI.csproj">
+      <Project>{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}</Project>
+      <Name>ZhuJi.Portal.WebUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2131</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

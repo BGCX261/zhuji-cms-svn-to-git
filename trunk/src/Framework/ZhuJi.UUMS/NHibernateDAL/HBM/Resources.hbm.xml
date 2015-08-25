@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.UUMS.Domain.Resources, ZhuJi.UUMS.Domain" table="Resources">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="ResourceName" type="String"/>
+		<property name="OrderBy" type="Int32"/>
+  </class>
+</hibernate-mapping>
+

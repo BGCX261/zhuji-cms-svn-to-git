@@ -1,0 +1,340 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5B9BE320-7588-4499-82AB-CDDFFA106304}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{300E0908-F3FC-427B-930A-83CED9D2D27F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Library", "..\Library\ZhuJi.Library.csproj", "{3FA115EF-7EB7-4D08-A351-F745719AB2D5}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Component", "..\Component\ZhuJi.Component.csproj", "{79DC848C-9777-4348-805E-109A876D1ED3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.AOP", "..\Framework\ZhuJi.AOP\ZhuJi.AOP.csproj", "{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Plugins", "..\Framework\ZhuJi.Plugins\ZhuJi.Plugins.csproj", "{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.NH", "..\Framework\ZhuJi.NHibernate\ZhuJi.NH.csproj", "{E86ECE69-56C4-4C27-AC61-692C146EF173}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module", "Module", "{138F1542-1F09-4B46-B1EC-39F3E6CD5254}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Modules", "..\Module\ZhuJi.Modules\ZhuJi.Modules.csproj", "{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Portal.WebUI", "WebUI\ZhuJi.Portal.WebUI.csproj", "{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Portal.NHibernateDAL", "NHibernateDAL\ZhuJi.Portal.NHibernateDAL.csproj", "{69B70128-59B6-4D3E-97D2-D46BB4362469}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Portal.Domain", "Domain\ZhuJi.Portal.Domain.csproj", "{A24679B9-81F5-4D4E-888E-8FC21E2606C1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Portal.IDAL", "IDAL\ZhuJi.Portal.IDAL.csproj", "{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{D071A17E-A128-49FF-A89F-E23E6BC30237}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{72ACB2E5-C976-4738-99E8-8E7C36EF1E27}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UUMS", "UUMS", "{81B97E4A-4F17-4961-90DF-32FADBD5657A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log", "Log", "{44EFC9C2-A914-4F24-9E09-E2E81886BEB3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Log.Domain", "..\Framework\ZhuJi.Log\Domain\ZhuJi.Log.Domain.csproj", "{49622943-2D39-4CA0-A7D4-D595B2A8D334}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Log.IDAL", "..\Framework\ZhuJi.Log\IDAL\ZhuJi.Log.IDAL.csproj", "{42DE3205-F2EE-4C71-B686-2446EA25F405}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Log.NHibernateDAL", "..\Framework\ZhuJi.Log\NHibernateDAL\ZhuJi.Log.NHibernateDAL.csproj", "{CAAEBE22-1C20-4437-967C-F076DE985375}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Log.WebUI", "..\Framework\ZhuJi.Log\WebUI\ZhuJi.Log.WebUI.csproj", "{30120728-1471-4403-92BD-09FF100B2AD7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.SSO", "..\Framework\ZhuJi.SSO\ZhuJi.SSO.csproj", "{9074CE0F-4897-44D3-B4DE-88355965C3D9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.SSO.Core", "..\Framework\ZhuJi.SSO\ZhuJi.SSO.Core\ZhuJi.SSO.Core.csproj", "{462C22F0-6FA0-4099-82FD-D1300B21503D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.UUMS.Domain", "..\Framework\ZhuJi.UUMS\Domain\ZhuJi.UUMS.Domain.csproj", "{006E32CC-4F89-44A2-9A05-9BAB258C07A3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.UUMS.IDAL", "..\Framework\ZhuJi.UUMS\IDAL\ZhuJi.UUMS.IDAL.csproj", "{36413D5F-0979-419D-8848-0262816DECC8}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.UUMS.NHibernateDAL", "..\Framework\ZhuJi.UUMS\NHibernateDAL\ZhuJi.UUMS.NHibernateDAL.csproj", "{1F965E9C-4ED7-496A-813A-C0F606001F53}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.UUMS.WebUI", "..\Framework\ZhuJi.UUMS\WebUI\ZhuJi.UUMS.WebUI.csproj", "{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.URLRewriter", "..\HttpModule\ZhuJi.URLRewriter\ZhuJi.URLRewriter.csproj", "{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{EA984417-55F5-44EC-B279-6F52F83AC115}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.Test", "..\Test\ZhuJi.Test\ZhuJi.Test.csproj", "{73BF8EF2-75F9-4C58-A6B7-600960983F11}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9A198C4-DE88-4166-8B38-95B494517624}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+		ZhuJi.Portal1.vsmdi = ZhuJi.Portal1.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhuJi.SkinModules", "..\SkinModules\ZhuJi.SkinModules.csproj", "{AF361050-4979-4B4A-A44D-A524C6377693}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkinModule", "SkinModule", "{860E92C1-359F-4718-BABB-961A5DE68B79}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ZhuJi.Portal1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FA115EF-7EB7-4D08-A351-F745719AB2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA115EF-7EB7-4D08-A351-F745719AB2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA115EF-7EB7-4D08-A351-F745719AB2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA115EF-7EB7-4D08-A351-F745719AB2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DC848C-9777-4348-805E-109A876D1ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DC848C-9777-4348-805E-109A876D1ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DC848C-9777-4348-805E-109A876D1ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DC848C-9777-4348-805E-109A876D1ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86ECE69-56C4-4C27-AC61-692C146EF173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86ECE69-56C4-4C27-AC61-692C146EF173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86ECE69-56C4-4C27-AC61-692C146EF173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86ECE69-56C4-4C27-AC61-692C146EF173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1051BAA-A8A6-4619-A2DC-C13F842E38C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B70128-59B6-4D3E-97D2-D46BB4362469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B70128-59B6-4D3E-97D2-D46BB4362469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B70128-59B6-4D3E-97D2-D46BB4362469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B70128-59B6-4D3E-97D2-D46BB4362469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24679B9-81F5-4D4E-888E-8FC21E2606C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24679B9-81F5-4D4E-888E-8FC21E2606C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24679B9-81F5-4D4E-888E-8FC21E2606C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24679B9-81F5-4D4E-888E-8FC21E2606C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49622943-2D39-4CA0-A7D4-D595B2A8D334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49622943-2D39-4CA0-A7D4-D595B2A8D334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49622943-2D39-4CA0-A7D4-D595B2A8D334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49622943-2D39-4CA0-A7D4-D595B2A8D334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DE3205-F2EE-4C71-B686-2446EA25F405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DE3205-F2EE-4C71-B686-2446EA25F405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DE3205-F2EE-4C71-B686-2446EA25F405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DE3205-F2EE-4C71-B686-2446EA25F405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAAEBE22-1C20-4437-967C-F076DE985375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAAEBE22-1C20-4437-967C-F076DE985375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAAEBE22-1C20-4437-967C-F076DE985375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAAEBE22-1C20-4437-967C-F076DE985375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30120728-1471-4403-92BD-09FF100B2AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30120728-1471-4403-92BD-09FF100B2AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30120728-1471-4403-92BD-09FF100B2AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30120728-1471-4403-92BD-09FF100B2AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9074CE0F-4897-44D3-B4DE-88355965C3D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9074CE0F-4897-44D3-B4DE-88355965C3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9074CE0F-4897-44D3-B4DE-88355965C3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9074CE0F-4897-44D3-B4DE-88355965C3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462C22F0-6FA0-4099-82FD-D1300B21503D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462C22F0-6FA0-4099-82FD-D1300B21503D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462C22F0-6FA0-4099-82FD-D1300B21503D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462C22F0-6FA0-4099-82FD-D1300B21503D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006E32CC-4F89-44A2-9A05-9BAB258C07A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006E32CC-4F89-44A2-9A05-9BAB258C07A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006E32CC-4F89-44A2-9A05-9BAB258C07A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006E32CC-4F89-44A2-9A05-9BAB258C07A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36413D5F-0979-419D-8848-0262816DECC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36413D5F-0979-419D-8848-0262816DECC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36413D5F-0979-419D-8848-0262816DECC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36413D5F-0979-419D-8848-0262816DECC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F965E9C-4ED7-496A-813A-C0F606001F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F965E9C-4ED7-496A-813A-C0F606001F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F965E9C-4ED7-496A-813A-C0F606001F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F965E9C-4ED7-496A-813A-C0F606001F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73BF8EF2-75F9-4C58-A6B7-600960983F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BF8EF2-75F9-4C58-A6B7-600960983F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BF8EF2-75F9-4C58-A6B7-600960983F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BF8EF2-75F9-4C58-A6B7-600960983F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF361050-4979-4B4A-A44D-A524C6377693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF361050-4979-4B4A-A44D-A524C6377693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF361050-4979-4B4A-A44D-A524C6377693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF361050-4979-4B4A-A44D-A524C6377693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1051BAA-A8A6-4619-A2DC-C13F842E38C6} = {5B9BE320-7588-4499-82AB-CDDFFA106304}
+		{69B70128-59B6-4D3E-97D2-D46BB4362469} = {5B9BE320-7588-4499-82AB-CDDFFA106304}
+		{A24679B9-81F5-4D4E-888E-8FC21E2606C1} = {5B9BE320-7588-4499-82AB-CDDFFA106304}
+		{80A775DE-2D8D-4A60-A7CA-A570ACC9F6F9} = {5B9BE320-7588-4499-82AB-CDDFFA106304}
+		{3FA115EF-7EB7-4D08-A351-F745719AB2D5} = {300E0908-F3FC-427B-930A-83CED9D2D27F}
+		{79DC848C-9777-4348-805E-109A876D1ED3} = {300E0908-F3FC-427B-930A-83CED9D2D27F}
+		{E86ECE69-56C4-4C27-AC61-692C146EF173} = {300E0908-F3FC-427B-930A-83CED9D2D27F}
+		{1DAB9134-77CF-44D5-9B67-CB3CE06BA40B} = {300E0908-F3FC-427B-930A-83CED9D2D27F}
+		{E1FAB6F0-55EE-4A03-A070-EA71D7CAB50A} = {D071A17E-A128-49FF-A89F-E23E6BC30237}
+		{FA240588-73E2-412E-AC3F-F9ECFBF8CDCE} = {D071A17E-A128-49FF-A89F-E23E6BC30237}
+		{4FA0C7E1-39D3-4499-8B2F-093883DCF8E1} = {138F1542-1F09-4B46-B1EC-39F3E6CD5254}
+		{72ACB2E5-C976-4738-99E8-8E7C36EF1E27} = {138F1542-1F09-4B46-B1EC-39F3E6CD5254}
+		{81B97E4A-4F17-4961-90DF-32FADBD5657A} = {138F1542-1F09-4B46-B1EC-39F3E6CD5254}
+		{44EFC9C2-A914-4F24-9E09-E2E81886BEB3} = {138F1542-1F09-4B46-B1EC-39F3E6CD5254}
+		{9074CE0F-4897-44D3-B4DE-88355965C3D9} = {72ACB2E5-C976-4738-99E8-8E7C36EF1E27}
+		{462C22F0-6FA0-4099-82FD-D1300B21503D} = {72ACB2E5-C976-4738-99E8-8E7C36EF1E27}
+		{006E32CC-4F89-44A2-9A05-9BAB258C07A3} = {81B97E4A-4F17-4961-90DF-32FADBD5657A}
+		{36413D5F-0979-419D-8848-0262816DECC8} = {81B97E4A-4F17-4961-90DF-32FADBD5657A}
+		{1F965E9C-4ED7-496A-813A-C0F606001F53} = {81B97E4A-4F17-4961-90DF-32FADBD5657A}
+		{4DCB7E70-1A57-49DE-8A42-C30F8D540EC2} = {81B97E4A-4F17-4961-90DF-32FADBD5657A}
+		{49622943-2D39-4CA0-A7D4-D595B2A8D334} = {44EFC9C2-A914-4F24-9E09-E2E81886BEB3}
+		{42DE3205-F2EE-4C71-B686-2446EA25F405} = {44EFC9C2-A914-4F24-9E09-E2E81886BEB3}
+		{CAAEBE22-1C20-4437-967C-F076DE985375} = {44EFC9C2-A914-4F24-9E09-E2E81886BEB3}
+		{30120728-1471-4403-92BD-09FF100B2AD7} = {44EFC9C2-A914-4F24-9E09-E2E81886BEB3}
+		{73BF8EF2-75F9-4C58-A6B7-600960983F11} = {EA984417-55F5-44EC-B279-6F52F83AC115}
+		{C9A198C4-DE88-4166-8B38-95B494517624} = {EA984417-55F5-44EC-B279-6F52F83AC115}
+		{AF361050-4979-4B4A-A44D-A524C6377693} = {860E92C1-359F-4718-BABB-961A5DE68B79}
+	EndGlobalSection
+EndGlobal

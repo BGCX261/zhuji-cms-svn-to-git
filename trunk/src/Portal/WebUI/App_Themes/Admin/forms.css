@@ -1,0 +1,14 @@
+.nfform select, .nfform input, .nfform textarea
+{	
+	border: 1px solid #CCCCCC;
+	margin: 5px;
+	font-size: 11px;
+	background: #FBFBFB;
+	padding: 2px;
+	nffocus:expression(onfocus=function(){NiceForm_Focus(this)},onblur=function(){NiceForm_FocusOut(this)});
+}
+.nfform .nffocus
+{
+	background: #F0F9FB;
+	border: 1px solid #1D95C7;
+}

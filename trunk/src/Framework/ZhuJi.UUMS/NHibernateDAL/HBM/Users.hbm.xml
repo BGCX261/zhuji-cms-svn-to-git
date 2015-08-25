@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ZhuJi.UUMS.Domain.Users, ZhuJi.UUMS.Domain" table="Users">
+    <id name="Id" type="Int32">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="RolesInfo" column="RolesId" update="false" insert="false" lazy="false"/>
+    <property name="RolesId" type="Int32"/>
+    <property name="Username" type="String"/>
+    <property name="Password" type="String"/>
+    <property name="Question" type="String"/>
+    <property name="Answer" type="String"/>
+    <property name="Passed" type="Boolean"/>
+    <property name="CreatedByUser" type="String"/>
+    <property name="CreatedByIp" type="String"/>
+    <property name="CreatedByDate" type="DateTime"/>
+  </class>
+</hibernate-mapping>
+
